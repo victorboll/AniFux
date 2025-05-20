@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.footer {
+  background-color: #141414;
+  padding: 20px 20px;
+  font-family: 'Alata', sans-serif;
+  color: #808080;
+}
+
+.footerLinksContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.footerLinksGroup {
+  display: flex;
+  gap: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerLinksColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLink {
+  color: #808080;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.footerSocialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.footerSocialIcons a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footerSocialIcons a:hover {
+  color: #fff;
+}
