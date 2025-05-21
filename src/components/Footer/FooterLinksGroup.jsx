@@ -1,5 +1,5 @@
 import styles from './Footer.module.css';
-import FooterLink from './FooterLink';
+import FooterLinksColumn from './FooterLinksColumn';
 
 const groups = [
   ["Audio Description", "Investor Relations", "Privacy", "Contact Us"],
@@ -12,13 +12,8 @@ export default function FooterLinksGroup() {
   return (
     <div className={styles.footerLinksGroup}>
       {groups.map((group, idx) => (
-        <div key={idx} className={styles.footerLinksColumn}>
-          {group.map((text, index) => (
-            <FooterLink key={index} text={text} />
-          ))}
-        </div>
+        <FooterLinksColumn key={idx} links={group} />
       ))}
     </div>
   );
 }
-//Criar um componente para a coluna de links
