@@ -1,5 +1,128 @@
 .header {
-    background-color: #000;
-    border-bottom: 2px solid #f44336;
-    color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 24px;
+  background: transparent; /* Fica transparente inicialmente */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+  box-sizing: border-box;
+  transition: background 0.3s ease, opacity 0.3s ease; /* Transição suave */
 }
+
+/* Quando o header for rolado */
+.headerScrolled {
+  background: rgba(0, 0, 0, 0.7); /* Um fundo preto com 70% de opacidade */
+  opacity: 0.9; /* Opacidade de 90% para não misturar com o conteúdo */
+}
+
+  
+  .logoLinksWrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .logo {
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Alkatra', cursive;
+  }
+  
+  .logoA {
+    color: cyan;
+  }
+  
+  .logoX {
+    color: limegreen;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: thin;
+    font-family: 'Alexandria', sans-serif;
+  }
+  
+  .linkItem {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .linkItem:hover {
+    color: cyan;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .search {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .search:hover {
+    color: cyan;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .searchWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 2;
+  }
+  
+  .searchButton svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+  
+  .searchButton:hover svg {
+    fill: cyan;
+  }
+  
+  .searchInput {
+    position: absolute;
+    right: 28px; /* posição à esquerda do botão */
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    font-size: 14px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+    min-width: 150px;
+  }
+  
+  

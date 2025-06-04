@@ -1,5 +1,8 @@
-.banner{
+.banner {
     width: 100%;
-    height: 347px;
-    
-}
+    height: 1300px;
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: brown;
+  }
